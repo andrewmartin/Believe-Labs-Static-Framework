@@ -1,0 +1,218 @@
+/* ------------------------------------------------------------
+
+  Screen Stylesheet
+
+	Coded by a smart developer [ hello@andrewmart.in ]
+	Built using Twitter Bootstrap.
+	http://twitter.github.com/bootstrap/
+
+  Believe in what you want.
+  www.believelabs.com
+
+	[ dream@believelabs.com ]
+	
+	screen.less
+	-Site wide layout, style, and functions.
+
+===============================================
+
+/* =Initial Page Structure
+------------------------------------------------------------ */
+
+
+html {
+  body {
+    #content,
+    &.sub #content {
+      position:relative;
+    }
+  }
+}
+
+/* =Basic Element Styles
+------------------------------------------------------------ */
+
+#content {
+  #main { 
+    .clearfix();
+    h1, h2, h3, h4, h5, h6 {
+
+    }
+    h1 {
+
+    }
+    h2 {
+
+    }
+    h3 {
+
+    }
+    h4 {
+
+    }
+    h5 {
+
+    }
+    h6 {
+
+    }
+  } 
+}
+
+// Cycle
+#main {
+  ul.cycle {
+    padding:0;
+    margin:0;
+    li {
+      list-style:none;
+      padding:0;
+      margin:0;
+      img {
+        .border-radius(3px);
+      }
+    }
+  }
+  .cycle-nav {
+    a {
+      float:left;
+      margin-right:10px;
+/*      .master-sprite(-166px -0px, 12px, 12px);*/
+      &:hover, &.activeSlide {
+/*        background-position:-148px 0;*/
+      }
+    }
+  }  
+}
+
+/* =Layout and Function
+------------------------------------------------------------ */
+
+	/* =Header
+------------------------------------------------------------ */
+
+header {
+  position:relative;
+  strong#logo {
+    a {
+      // .master-sprite(-0px -0px, 279px, 89px);
+    }
+  }
+}
+
+	/* =Navigation
+------------------------------------------------------------ */
+
+#nav {
+  color:@white;
+  background:@blue;
+  height:40px;
+  .box-shadow(0px 5px 10px 0px rgba(0,0,0,0.3));
+  > ul {
+    padding:0;
+    margin:0;
+    width:1052px;
+    text-align:center;
+    margin:0 auto;
+    > li {
+    display:inline;
+    margin:0;
+    padding:0 30px;
+    list-style:none;
+    position:relative;
+      > a {
+        color:@white;
+        font-size:15px;
+        text-transform:uppercase;
+        padding:10px 0;
+        line-height:40px;
+        &:hover {
+          text-decoration:none;
+        }
+      }
+    &.current_menu_item a,
+    &.current_page_item a,
+    &.current_page_ancestor a,
+    &.current_page_parent a {
+      text-decoration:underline;
+      }
+    ul.sub-menu {
+      position:absolute;
+      z-index:10;
+      left:0px;
+      top:0px;
+      
+      background:transparent url(../images/layout/global/subnav-tile.png) repeat scroll 0px 0px;
+      li {
+        display:block;
+        text-align:center;
+        font-weight:bold;
+        text-transform:uppercase;
+        font-size:12px;
+        line-height:16px;
+        
+        list-style:none;
+        a {
+          color:@grayDark;
+          padding:5px 10px;
+          display:block;
+          &:hover {
+            color:@blue;
+            text-decoration:none;
+          }
+        }
+      }
+    }
+    }
+  }
+} /*end nav*/
+
+	/* =Content
+------------------------------------------------------------ */
+
+	/* =Footer
+------------------------------------------------------------ */
+
+footer {
+  clear:both;
+  position:relative;
+  .menu {
+    ul {
+      text-align:center;
+      li {
+        display:inline;
+      }
+    }
+  }
+  p.copyright {
+    float:right;
+  }
+}
+
+	/* =CSS Media Queries
+------------------------------------------------------------ */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+}
